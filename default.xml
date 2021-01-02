@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="origin" fetch=".." />
+	<remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+
+	<default remote="origin" revision="master" sync-j="4" />
+
+	<project path="wizard" name="wizard-yocto" >
+		<copyfile src="core/root.mk" dest="Makefile" />
+	</project>
+
+	<project path="platform/poky" remote="yoctoproject" name="poky" />
+</manifest>
