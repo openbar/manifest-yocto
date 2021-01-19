@@ -2,6 +2,7 @@
 <manifest>
 	<remote name="origin" fetch=".." />
 	<remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+	<remote name="openembedded" fetch="git://git.openembedded.org" />
 
 	<default remote="origin" revision="master" sync-j="4" />
 
@@ -10,4 +11,5 @@
 	</project>
 
 	<project path="platform/poky" remote="yoctoproject" name="poky" />
+	<project path="platform/meta-openembedded" remote="openembedded" name="meta-openembedded" />
 </manifest>
